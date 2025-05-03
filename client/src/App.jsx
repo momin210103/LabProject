@@ -1,11 +1,19 @@
-import { useState } from 'react'
 import './App.css'
+import Navbar from "./components/Navbar"
+import  {Footer} from "./components/Footer"
+import { Outlet } from 'react-router'
 
 function App() {
   
+
   return (
     <>
-      <h1>Hello World</h1>
+    <Navbar/>
+    <main>
+      <Outlet></Outlet>
+    </main>
+    
+    <Footer></Footer>
     </>
   )
 }
